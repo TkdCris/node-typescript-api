@@ -30,7 +30,7 @@
 //    "noEmitOnError": true,                /* Impede que a compilação de um arquivo continue se houver erros. */
 //    "strictPropertyInitialization": true, /* Reporta erros se uma propriedade não for inicializada no construtor */
     "experimentalDecorators": true,       /* Habilita suporte a decoradores de classe experimentais */
-    "emitDecoratorMetadata": true         /* Habilita a geração de metadados de decoradores */,
+    "emitDecoratorMetadata": true,         /* Habilita a geração de metadados de decoradores */
     "paths": {
       "@src/*": ["./src/*"],
       "@test/*": ["./test/*"],
