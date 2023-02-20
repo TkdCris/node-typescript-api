@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    /* Opções do compilador */
+    "target": "es2022",                   /* Especifica a versão do ECMAScript que o TypeScript deve compilar o código para. */
+    "moduleResolution": "node",           /* Define a estratégia de resolução de módulos */
+    "module": "commonjs",                 /* Define o tipo de módulo que o TypeScript deve gerar. */
+    //"lib": ["es2022"],                  /* Não colocando a lib, o TypeScript incluirá automaticamente as bibliotecas de tipo que correspondem ao target especificado.  */
+    "sourceMap": true,                    /* Gera arquivos de mapas de origem para facilitar a depuração */
+    "outDir": "./dist",                   /* Especifica o diretório onde os arquivos JavaScript compilados devem ser gerados. */
+    "strict": true,                       /* Ativa um conjunto de verificações de tipo rigorosas que ajudam a detectar erros no seu código. */
+    "noImplicitAny": true,                /* Reporta erros se uma variável tiver um tipo implícito 'any' */
+    "strictNullChecks": true,             /* Habilita verificação estrita de tipos nulos */
+    "strictFunctionTypes": true,          /* Habilita verificação estrita de tipos de função */
+    "noImplicitThis": true,               /* Reporta erros se 'this' for usado sem um tipo explícito */
+    "resolveJsonModule": false,
+    "alwaysStrict": true,
+    "removeComments": true,               /* Remove comentários dos arquivos gerados */
+    "noImplicitReturns": true,            /* Reporta erros se uma função não retornar um valor */
+    "esModuleInterop": true,              /* Permite que os módulos do CommonJS sejam importados usando a sintaxe ES6. */
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+
+//    "forceConsistentCasingInFileNames": true,
+//    "allowJs": true,                      /* Permite que arquivos JavaScript sejam incluídos na compilação */
+//    "declaration": true,                  /* Gera arquivos de declaração para seus módulos, permitindo que outros programas TypeScript possam usá-los. */
+//    "declarationMap": true,               /* Gera mapas de origem para seus arquivos de declaração. */
+//    "noUnusedLocals": true,               /* Reporta erros se uma variável local não for usada */
+//    "noUnusedParameters": true,           /* Reporta erros se um parâmetro de função não for usado */
+//    "noFallthroughCasesInSwitch": true,   /* Reporta erros se um caso 'case' no switch não contiver uma instrução 'break' */
+//    "noEmitOnError": true,                /* Impede que a compilação de um arquivo continue se houver erros. */
+//    "strictPropertyInitialization": true, /* Reporta erros se uma propriedade não for inicializada no construtor */
+    "experimentalDecorators": true,       /* Habilita suporte a decoradores de classe experimentais */
+    "emitDecoratorMetadata": true         /* Habilita a geração de metadados de decoradores */,
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@test/*": ["./test/*"],
+    },
+    "rootDirs": [
+      "./src",
+      "./test"
+    ],
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./test/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
